@@ -31,13 +31,13 @@ export default function Home() {
 					<div className="p-2 gap-4">
 						<label>What programming languages do you know?</label><br/>
 						<div className="text-left content-center grid grid-cols-2 gap-1 mt-1 px-5 py-2">
-							<div>
+							<div className="italic">
 								<input type="checkbox" value="JS" />
 								<label className="p-2">JS</label><br/>
 								<input type="checkbox" value="Python" />
 								<label className="p-2">Python</label><br/>
 							</div>
-							<div>
+							<div className="italic">
 								<input type="checkbox" value="C#" />
 								<label className="p-2">C#</label><br/>
 								<input type="checkbox" value="PHP" />
@@ -47,7 +47,7 @@ export default function Home() {
 						<label>Attach your photo</label>
 						<input type="file" name="photo" multiple accept="image/*,image/jpeg" /><br/>
 						<input type="checkbox" name="confirmation" required />
-						<label>Do you agree with the processing of <a className= "link" target="_blank" href="https://en.wikipedia.org/wiki/Personal_data"><strong>personal data</strong></a>?</label><br/>
+						<label>Do you agree with the processing of <a className="font-bold hover:text-gray-500 transition-colors duration-300 ease-in-out" target="_blank" href="https://en.wikipedia.org/wiki/Personal_data">personal data</a>?</label><br/>
 						<input type="checkbox" name="promotional" defaultChecked />
 						<label>Do you agree to receive promotional messages?</label>
 						<div className="p-2">
