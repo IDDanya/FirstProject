@@ -1,12 +1,6 @@
 import { DefaultQuestionGrid, ProgrammingLanguages, Header, AttachPhoto, ConfirmationPromotional, Button, Footer} from './components/.';
 import "./globals.css";
 
-const name = "Your name:"
-const last_name = "Your last name:"
-const old = "How old are you:"
-const gender = "Your gender:"
-const portfolio = "Show off your portfolio:"
-const email = "Your email:"
 export default function Main() {
 	return (
 		<div className="justify-center text-center bg-gray-300">
@@ -17,7 +11,7 @@ export default function Main() {
 						<label>Form</label>
 					</div>
 					<div className="block_form">
-						<DefaultQuestionGrid name={name} last_name={last_name} old={old} gender={gender} portfolio={portfolio} email={email}/>
+						<DefaultQuestionGrid />
 						<div className="p-2 gap-4">
 							<ProgrammingLanguages />
 							<AttachPhoto />
