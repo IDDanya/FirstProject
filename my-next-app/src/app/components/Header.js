@@ -1,8 +1,8 @@
-export default function Header() {
+export default function Header({text}) {
 	return (
 		<header className="p-2">
-			<h1 className="text-3xl font-bold">Application for developer</h1>
-			<label>Fill out a simple application to become a developer</label>
+			<h1 className="text-3xl font-bold">{text?.title}</h1>
+			<label>{text?.description}</label>
 		</header>
 	);
 }

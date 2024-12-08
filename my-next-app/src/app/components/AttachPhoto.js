@@ -1,8 +1,8 @@
-export default function AttachPhoto() {
+export default function AttachPhoto({text_photo}) {
 	return (
 		<div>
-			<label>Attach your photo</label>
-			<input type="file" name="photo" multiple accept="image/*,image/jpeg" /><br/>
+			<label>{text_photo}</label>
+			<input type="file" multiple accept="image/*,image/jpeg" /><br/>
 		</div>
 	);
 }
